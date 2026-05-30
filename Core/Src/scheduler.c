@@ -1,0 +1,36 @@
+#include "scheduler.h"
+#include "app_config.h"
+#include "mock_sensor.h"
+#include "filter.h"
+#include "aqi.h"
+#include "alarm.h"
+#include "logger.h"
+#include "stm32f1xx_hal.h"
+
+void Scheduler_Init(void)
+{
+	
+}
+
+void Scheduler_Run(void)
+{
+	static uint32_t last_sensor_time = 0;
+	static uint32_t last_log_time = 0;
+	
+	uint32_t now = HAL_GetTick();
+	
+	if((now - last_sensor_time) >= SENSOR_PERIOD_MS)
+	{
+		MockSensor_Update();
+		Filter_Update();
+		AQI_Update()'
+		Alarm_Update();
+		
+		last_sensor_time = now;
+	}
+	if((now - last_log_time) >= LOG_PERIOD_MS)
+	{
+	Logger_Repport():
+	last_log_time = now;
+	}
+}

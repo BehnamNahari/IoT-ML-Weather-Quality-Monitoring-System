@@ -1,0 +1,10 @@
+#ifndef APP_CONFIG_H
+#define APP_CONFIG_H
+
+#define SENSOR_PERIOD_MS				1000U
+#define LOG_PERIOD_MS						5000U
+
+#define CO2_WARNING_THRESHOLD		1000.0f
+#define CO2_DANGER_THRESHOLD		1200.0f
+
+#endif
