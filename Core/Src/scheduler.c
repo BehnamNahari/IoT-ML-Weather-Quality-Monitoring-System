@@ -23,14 +23,14 @@ void Scheduler_Run(void)
 	{
 		MockSensor_Update();
 		Filter_Update();
-		AQI_Update()'
+		AQI_Update();
 		Alarm_Update();
 		
 		last_sensor_time = now;
 	}
 	if((now - last_log_time) >= LOG_PERIOD_MS)
 	{
-	Logger_Repport():
-	last_log_time = now;
+		Logger_Repport();
+		last_log_time = now;
 	}
 }
