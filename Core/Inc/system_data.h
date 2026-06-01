@@ -13,7 +13,7 @@ typedef enum
 	
 typedef struct
 {
-	float temprature;
+	float temperature;
 	float humidity;
 	float pressure;
 	
