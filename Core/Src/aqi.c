@@ -1,6 +1,6 @@
 #include "aqi.h"
 #include "system_data.h"
-#iinclude "app_config.h"
+#include "app_config.h"
 
 static uint16_t ComputeAQI(float pm25, AirState_t *state)
 {
@@ -8,19 +8,28 @@ static uint16_t ComputeAQI(float pm25, AirState_t *state)
 	{
 		*state = AIR_STATE_GOOD;
 		return 25;
-	} else if(pm25 <= 35.4f)
+	} 
+	else if(pm25 <= 35.4f)
 	{
 		*state = AIR_STATE_MODERATE;
 		return 75;
-	} else if ( pm25 <= 55.4f)
+	}
+	else if ( pm25 <= 55.4f)
 	{
 		*state = AIR_STATE_WARNING;
 		return 125;
-	} else 
+	} 
+	else 
 	{
-		*state = AIR_STATE_DANGEROUS:
+		*state = AIR_STATE_DANGEROUS;
 		return 250;
 	}
+}
+
+void AQI_Init(void)
+{
+	gWeather.aqi = 0;
+	gWeather.air_state = AIR_STATE_GOOD;
 }
 
 void AQI_Update(void)
@@ -33,7 +42,8 @@ void AQI_Update(void)
 		{
 			gWeather.aqi = 200;
 		}
-	} else if(gWeather.co2 >= CO2_WARNING_THRESHOLD && gWeather.air_state < AIR_STATE_WARNING) 
+	} 
+	else if(gWeather.co2 >= CO2_WARNING_THRESHOLD && gWeather.air_state < AIR_STATE_WARNING) 
 	{
 		gWeather.air_state = AIR_STATE_WARNING;
 		if(gWeather.aqi < 120)
