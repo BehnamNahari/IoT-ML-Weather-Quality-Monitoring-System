@@ -2,6 +2,6 @@
 #define MOCK_SENSOR_H
 
 void MockSensor_Init(void);
-void MockSenser_Update(void);
+void MockSensor_Update(void);
 
 #endif
