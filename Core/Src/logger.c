@@ -1,8 +1,9 @@
 #include "logger.h"
 #include "system_data.h"
-#include "usart.h"
+#include "main.h"
 #include <stdio.h>
 #include <string.h>
+extern UART_HandleTypeDef huart2;
 
 static const char *StateToString(AirState_t state)
 {

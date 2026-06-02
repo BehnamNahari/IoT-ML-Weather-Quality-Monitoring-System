@@ -1,7 +1,7 @@
 #include "alarm.h"
 #include "system_data.h"
 #include "app_config.h"
-#include "mian.h"
+#include "main.h"
 
 void Alarm_Init(void)
 {

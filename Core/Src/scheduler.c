@@ -30,7 +30,7 @@ void Scheduler_Run(void)
 	}
 	if((now - last_log_time) >= LOG_PERIOD_MS)
 	{
-		Logger_Repport();
+		Logger_Report();
 		last_log_time = now;
 	}
 }

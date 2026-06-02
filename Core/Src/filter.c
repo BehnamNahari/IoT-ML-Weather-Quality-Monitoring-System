@@ -14,7 +14,7 @@ void Filter_Init(void)
 	{
 		if(first_run)
 		{
-			pm25_ema = gWeather.p25;
+			pm25_ema = gWeather.pm25;
 			first_run = 0;
 		}
 		else
