@@ -1,8 +1,5 @@
 --cpu Cortex-M3
 "smart weather and air quality monitoring system\startup_stm32f103xb.o"
-"smart weather and air quality monitoring system\main.o"
-"smart weather and air quality monitoring system\stm32f1xx_it.o"
-"smart weather and air quality monitoring system\stm32f1xx_hal_msp.o"
 "smart weather and air quality monitoring system\alarm.o"
 "smart weather and air quality monitoring system\aqi.o"
 "smart weather and air quality monitoring system\filter.o"
@@ -10,6 +7,9 @@
 "smart weather and air quality monitoring system\mock_sensor.o"
 "smart weather and air quality monitoring system\scheduler.o"
 "smart weather and air quality monitoring system\system_data.o"
+"smart weather and air quality monitoring system\main.o"
+"smart weather and air quality monitoring system\stm32f1xx_it.o"
+"smart weather and air quality monitoring system\stm32f1xx_hal_msp.o"
 "smart weather and air quality monitoring system\stm32f1xx_hal_gpio_ex.o"
 "smart weather and air quality monitoring system\stm32f1xx_hal_tim.o"
 "smart weather and air quality monitoring system\stm32f1xx_hal_tim_ex.o"

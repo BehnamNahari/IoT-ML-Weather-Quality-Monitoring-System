@@ -1,8 +1,8 @@
 smart\ weather\ and\ air\ quality\ monitoring\ system/scheduler.o: \
   ..\Core\Src\scheduler.c ..\Core\Inc\scheduler.h \
   ..\Core\Inc\app_config.h ..\Core\Inc\mock_sensor.h \
-  ..\Core\Inc\filter.h ..\Core\Inc\aqi.h ..\Core\Inc\alarm.h \
-  ..\Core\Inc\logger.h \
+  ..\Core\Inc\filter.h ..\Core\Inc\aqi.h ..\Core\Inc\system_data.h \
+  ..\Core\Inc\alarm.h ..\Core\Inc\logger.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h \
   ..\Core\Inc\stm32f1xx_hal_conf.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h \
