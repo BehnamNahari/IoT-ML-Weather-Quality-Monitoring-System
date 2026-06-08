@@ -1,7 +1,42 @@
+/**
+ * @file    mock_sensor.h
+ * @brief   Mock sensor driver - شبیه‌ساز سنسور برای تست روی STM32
+ *
+ * این ماژول داده‌های واقعی‌گونه تولید می‌کند:
+ *  - رنج‌های فیزیکی معقول برای هر پارامتر
+ *  - تغییر تدریجی (drift) به جای جهش تصادفی کامل
+ *  - سناریوی آلودگی: CO2 و PM2.5 به آرامی بالا می‌روند
+ */
+
 #ifndef MOCK_SENSOR_H
 #define MOCK_SENSOR_H
 
-void MockSensor_Init(void);
+#include <stdint.h>
+
+/* ------------------------------------------------------------------ */
+/*  سناریوهای قابل انتخاب                                               */
+/* ------------------------------------------------------------------ */
+typedef enum
+{
+    MOCK_SCENARIO_NORMAL   = 0,   /* هوای معمولی                      */
+    MOCK_SCENARIO_POLLUTED = 1,   /* آلودگی تدریجی (CO2 و PM2.5 بالا) */
+    MOCK_SCENARIO_HOT      = 2,   /* دمای بالا + رطوبت پایین           */
+} MockScenario_t;
+
+/* ------------------------------------------------------------------ */
+/*  API عمومی                                                           */
+/* ------------------------------------------------------------------ */
+
+/**
+ * @brief  مقداردهی اولیه - seed تصادفی از HAL_GetTick می‌گیرد
+ * @param  scenario  سناریوی مورد نظر برای شبیه‌سازی
+ */
+void MockSensor_Init(MockScenario_t scenario);
+
+/**
+ * @brief  به‌روزرسانی مقادیر gWeather با داده‌های جدید شبیه‌سازی‌شده
+ *         باید هر SENSOR_PERIOD_MS یک بار فراخوانی شود
+ */
 void MockSensor_Update(void);
 
-#endif
+#endif /* MOCK_SENSOR_H */
