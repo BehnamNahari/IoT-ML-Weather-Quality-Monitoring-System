@@ -444,6 +444,26 @@
               <FileType>1</FileType>
               <FilePath>../Core/Src/stm32f1xx_hal_msp.c</FilePath>
             </File>
+            <File>
+              <FileName>cli.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\cli.c</FilePath>
+            </File>
+            <File>
+              <FileName>fault.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\fault.c</FilePath>
+            </File>
+            <File>
+              <FileName>history.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\history.c</FilePath>
+            </File>
+            <File>
+              <FileName>predictor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\predictor.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

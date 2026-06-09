@@ -6,14 +6,31 @@
 #include "alarm.h"
 #include "logger.h"
 #include "stm32f1xx_hal.h"
+#include "history.h"
+#include "predictor.h"
+#include "cli.h"
+#include "fault.h"
 
 void Scheduler_Init(void)
 {
-	
+	History_Init();
+	Predictor_Init();
+	Fault_Init();
+	CLI_Init();
 }
 
 void Scheduler_Run(void)
 {
+	
+	/*
+		!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! IN HARO PIADE SAZI MIKONID DOOSTAN !!!!!!!!!!!!!!!!!
+		History_PushSample();
+		Predictor_Update();
+		Fault_Update();
+		CLI_Process();
+	*/
+	
+	
 	static uint32_t last_sensor_time = 0;
 	static uint32_t last_log_time = 0;
 	
