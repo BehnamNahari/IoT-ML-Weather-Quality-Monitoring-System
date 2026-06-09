@@ -104,6 +104,7 @@ void CLI_RxCallback(void)
         if (s_len > 0)
         {
             s_buf[s_len] = '\0';
+            s_len = 0;
         }
         return;
     }
