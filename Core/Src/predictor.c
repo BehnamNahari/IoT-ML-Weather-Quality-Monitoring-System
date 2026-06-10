@@ -10,7 +10,7 @@ void Predictor_Update(void)
 	
 }
 
-uint16_t Predictor_GetForecasteAQI(void)
+uint16_t Predictor_GetForecastAQI(void)
 {
-	return 0;
+    return 0;
 }
