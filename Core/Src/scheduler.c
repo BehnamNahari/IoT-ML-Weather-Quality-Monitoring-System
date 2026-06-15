@@ -13,38 +13,41 @@
 
 void Scheduler_Init(void)
 {
-    History_Init();
-    Predictor_Init();
-    Fault_Init();
-    CLI_Init();
+	History_Init();
+	Predictor_Init();
+	Fault_Init();
+	CLI_Init();
 }
 
 void Scheduler_Run(void)
 {
-    static uint32_t last_sensor_time = 0;
-    static uint32_t last_log_time = 0;
-
-    uint32_t now = HAL_GetTick();
-
-    if((now - last_sensor_time) >= SENSOR_PERIOD_MS)
-    {
-        MockSensor_Update();
-        Filter_Update();
-        AQI_Update();
-        Alarm_Update();
-
-        History_PushSample();
-        Predictor_Update();
-        Fault_Update();
-
-        last_sensor_time = now;
-    }
-
-    if((now - last_log_time) >= LOG_PERIOD_MS)
-    {
-        Logger_Report();
-        last_log_time = now;
-    }
-
-    CLI_Process();
+	
+	/*
+		!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! IN HARO PIADE SAZI MIKONID DOOSTAN !!!!!!!!!!!!!!!!!
+		History_PushSample();
+		Predictor_Update();
+		Fault_Update();
+		CLI_Process();
+	*/
+	
+	
+	static uint32_t last_sensor_time = 0;
+	static uint32_t last_log_time = 0;
+	
+	uint32_t now = HAL_GetTick();
+	
+	if((now - last_sensor_time) >= SENSOR_PERIOD_MS)
+	{
+		MockSensor_Update();
+		Filter_Update();
+		AQI_Update();
+		Alarm_Update();
+		
+		last_sensor_time = now;
+	}
+	if((now - last_log_time) >= LOG_PERIOD_MS)
+	{
+		Logger_Report();
+		last_log_time = now;
+	}
 }

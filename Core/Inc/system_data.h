@@ -14,7 +14,7 @@ typedef enum
 	typedef enum{
 	SYSTEM_MODE_AUTO = 0,
 	SYSTEM_MODE_MANUAL
-}SystemMode_t;
+}SystemMOde_t;
 
 	typedef enum
 	{
@@ -46,7 +46,7 @@ typedef struct
 	TrendState_t trend_state;
 	uint32_t fault_flags;
 	
-	SystemMode_t system_mode;
+	SystemMOde_t system_mode;
 	
 	} WeatherData_t;
 
