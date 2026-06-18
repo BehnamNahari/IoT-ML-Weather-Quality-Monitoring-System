@@ -21,17 +21,6 @@ static uint32_t alarm_counter = 0;
 static AlarmLevel_t current_level = ALARM_LEVEL_NONE;
 static AlarmReason_t current_reason = ALARM_REASON_NONE;
 
-/* Advanced Statistics */
-static AlarmLevel_t max_level = ALARM_LEVEL_NONE;
-
-static uint32_t alarm_active_ticks = 0;
-
-static uint32_t warning_count = 0;
-static uint32_t danger_count = 0;
-static uint32_t critical_count = 0;
-
-static uint16_t last_aqi = 0;
-static float last_co2 = 0.0f;
 
 /*----------------------------------------------------------*/
 
@@ -42,17 +31,6 @@ void Alarm_Init(void)
 
     current_level = ALARM_LEVEL_NONE;
     current_reason = ALARM_REASON_NONE;
-
-    max_level = ALARM_LEVEL_NONE;
-
-    alarm_active_ticks = 0;
-
-    warning_count = 0;
-    danger_count = 0;
-    critical_count = 0;
-
-    last_aqi = 0;
-    last_co2 = 0.0f;
 
     gWeather.alarm = 0;
 }
@@ -110,10 +88,8 @@ void Alarm_Update(void)
     AlarmLevel_t newLevel;
 
     uint8_t previousState;
-    AlarmLevel_t previousLevel;
 
     previousState = alarm_active;
-    previousLevel = current_level;
 
     aqiLevel = GetAQILevel(gWeather.aqi);
     co2Level = GetCO2Level(gWeather.co2);
@@ -139,43 +115,6 @@ void Alarm_Update(void)
     else
     {
         current_reason = ALARM_REASON_NONE;
-    }
-
-    /*
-     * Data Validation
-     */
-    if(gWeather.aqi > 1000U)
-    {
-        newLevel = ALARM_LEVEL_CRITICAL;
-    }
-
-    if(gWeather.co2 > 10000.0f)
-    {
-        newLevel = ALARM_LEVEL_CRITICAL;
-    }
-
-    /*
-     * Sudden AQI Change Detection
-     */
-    if((last_aqi != 0U) &&
-       (gWeather.aqi > (last_aqi + 50U)))
-    {
-        if(newLevel < ALARM_LEVEL_DANGER)
-        {
-            newLevel = ALARM_LEVEL_DANGER;
-        }
-    }
-
-    /*
-     * Sudden CO2 Change Detection
-     */
-    if((last_co2 > 0.0f) &&
-       ((gWeather.co2 - last_co2) > 300.0f))
-    {
-        if(newLevel < ALARM_LEVEL_DANGER)
-        {
-            newLevel = ALARM_LEVEL_DANGER;
-        }
     }
 
     /*
@@ -215,47 +154,7 @@ void Alarm_Update(void)
             break;
     }
 
-    /*
-     * Maximum Alarm Level
-     */
-    if(current_level > max_level)
-    {
-        max_level = current_level;
-    }
-
-    /*
-     * Statistics Per Level
-     */
-    if(previousLevel != current_level)
-    {
-        switch(current_level)
-        {
-            case ALARM_LEVEL_WARNING:
-                warning_count++;
-                break;
-
-            case ALARM_LEVEL_DANGER:
-                danger_count++;
-                break;
-
-            case ALARM_LEVEL_CRITICAL:
-                critical_count++;
-                break;
-
-            default:
-                break;
-        }
-    }
-
     alarm_active = (current_level != ALARM_LEVEL_NONE);
-
-    /*
-     * Active Time Counter
-     */
-    if(alarm_active)
-    {
-        alarm_active_ticks++;
-    }
 
     /*
      * Alarm Counter
@@ -270,12 +169,6 @@ void Alarm_Update(void)
      * Shared System Data
      */
     gWeather.alarm = alarm_active;
-
-    /*
-     * Save Previous Samples
-     */
-    last_aqi = gWeather.aqi;
-    last_co2 = gWeather.co2;
 }
 
 /*----------------------------------------------------------*/

@@ -99,7 +99,7 @@ int main(void)
   MX_TIM2_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
-	MockSensor_Init(MOCK_SCENARIO_NORMAL);
+	MockSensor_Init();
 	Filter_Init();
 	AQI_Init();
 	Alarm_Init();
