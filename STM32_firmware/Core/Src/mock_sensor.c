@@ -19,6 +19,9 @@ void MockSensor_Update(void)
 	gWeather.temperature = 20.0f  + (NextRand() % 1000u)   / 100.0f;
 	gWeather.humidity   = 45.0f  + (NextRand() % 3000u)   / 100.0f;
 	gWeather.pressure   = 990.0f + (NextRand() % 4000u)   / 100.0f;
+	gWeather.pm25_prev3 = gWeather.pm25_prev2;
+	gWeather.pm25_prev2 = gWeather.pm25_prev1;
+	gWeather.pm25_prev1 = gWeather.pm25;
 	gWeather.pm25       = 5.0f   + (NextRand() % 20000u)  / 100.0f;
 	gWeather.co2        = 400.0f + (NextRand() % 150000u) / 100.0f;
 	}

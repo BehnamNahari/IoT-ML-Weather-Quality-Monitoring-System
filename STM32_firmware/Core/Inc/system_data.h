@@ -34,6 +34,12 @@ typedef struct
 	
 	float filtered_pm25;
 	
+	float pm25_prev1;
+	float pm25_prev2;
+	float pm25_prev3;
+	
+	float ml_prediction;
+	
 	uint16_t aqi;
 	AirState_t air_state;
 	

@@ -41,8 +41,8 @@ void Scheduler_Run(void)
 		MockSensor_Update();
 		Filter_Update();
 		AQI_Update();
+		Predictor_Update();
 		Alarm_Update();
-		
 		last_sensor_time = now;
 	}
 	if((now - last_log_time) >= LOG_PERIOD_MS)

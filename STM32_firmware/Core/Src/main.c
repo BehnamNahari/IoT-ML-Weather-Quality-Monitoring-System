@@ -27,6 +27,7 @@
 #include "logger.h"
 #include "scheduler.h"
 #include "filter.h"
+#include  "predictor.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -104,6 +105,7 @@ int main(void)
 	AQI_Init();
 	Alarm_Init();
 	Logger_Init();
+	Predictor_Init();
 	Scheduler_Init();
   /* USER CODE END 2 */
 

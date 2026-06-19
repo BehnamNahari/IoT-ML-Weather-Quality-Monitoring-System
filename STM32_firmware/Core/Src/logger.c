@@ -47,12 +47,13 @@ void Logger_Report(void)
 	int len = snprintf(
 		buf,
 		sizeof(buf),
-		"T=%.1f H=%.1f P=%.1f PM25=%.1f AQI=%u STATE=%s ALARM=%u TREND=%s\r\n",
+		"T=%.1f H=%.1f P=%.1f PM25=%.1f AQI=%u ML=%.1f STATE=%s ALARM=%u TREND=%s\r\n",
 		gWeather.temperature,
 		gWeather.humidity,
 		gWeather.pressure,
 		gWeather.filtered_pm25,
 		gWeather.aqi,
+		gWeather.ml_prediction,
 		StateToString(gWeather.air_state),
 		gWeather.alarm,
 		TrendToString(AQI_GetTrend())   /* AQI MODULE ADDITION */
