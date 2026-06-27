@@ -297,11 +297,20 @@ The system processes environmental data through multiple software layers:
 - Alarm hysteresis
 - Alarm reason detection
 
-## Member 5
+## Ali Arshia Maleki
 
-- Logger module
-- UART reporting
-- CLI / reporting subsystem
+- UART logging system enhancement
+- System status reporting
+- Alarm monitoring and reporting
+- Fault monitoring integration
+- History statistics reporting
+- AQI forecast integration
+- Air quality trend reporting
+- BMP280 pressure sensor evaluation
+- I2C protocol study
+- Pressure sensor simulation (Mock)
+- Pressure data generation
+- Module testing and build verification
 
 ## Member 6
 
