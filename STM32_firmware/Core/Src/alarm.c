@@ -198,3 +198,22 @@ uint32_t Alarm_GetCounter(void)
 {
     return alarm_counter;
 }
+
+const char* AlarmLevelToString(AlarmLevel_t level)
+{
+    switch(level)
+    {
+        case ALARM_LEVEL_WARNING:
+            return "WARNING";
+
+        case ALARM_LEVEL_DANGER:
+            return "DANGER";
+
+        case ALARM_LEVEL_CRITICAL:
+            return "CRITICAL";
+
+        case ALARM_LEVEL_NONE:
+        default:
+            return "NONE";
+    }
+}

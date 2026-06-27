@@ -22,23 +22,23 @@ void Scheduler_Init(void)
 void Scheduler_Run(void)
 {
 	
-	/*
-		!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! IN HARO PIADE SAZI MIKONID DOOSTAN !!!!!!!!!!!!!!!!!
-		History_PushSample();
-		Predictor_Update();
-		Fault_Update();
-		CLI_Process();
-	*/
+	
+	
+	Fault_Update();
+	CLI_Process();
+	
 	
 	
 	static uint32_t last_sensor_time = 0;
 	static uint32_t last_log_time = 0;
 	
 	uint32_t now = HAL_GetTick();
+	gWeather.timestamp_ms = now;
 	
 	if((now - last_sensor_time) >= SENSOR_PERIOD_MS)
 	{
 		MockSensor_Update();
+		gWeather.sample_id++;
 		Filter_Update();
 		AQI_Update();
 		History_PushSample();

@@ -32,6 +32,11 @@ void Predictor_Init(void)
 	prediction = 0.0f;
 }
 
+uint16_t Predictor_GetForecastAQI(void)
+{
+    return gWeather.forecast_aqi;
+}
+
 void Predictor_Update(void)
 {
 	float x[NUM_FEATURES];
@@ -40,7 +45,7 @@ void Predictor_Update(void)
 	x[1] = gWeather.pm25_prev1;
 	x[2] = gWeather.pm25_prev2;
 	x[3] = gWeather.pm25_prev3;
-	x[3] = gWeather.temperature;
+	x[4] = gWeather.temperature;
 	x[5] = gWeather.pressure;
 	
 	prediction = Predict(x);

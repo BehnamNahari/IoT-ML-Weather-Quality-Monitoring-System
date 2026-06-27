@@ -28,6 +28,7 @@
 #include "scheduler.h"
 #include "filter.h"
 #include  "predictor.h"
+#include "cli.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -367,6 +368,13 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+    if(huart->Instance == USART2)
+    {
+        CLI_RxCallback();
+    }
+}
 
 /* USER CODE END 4 */
 

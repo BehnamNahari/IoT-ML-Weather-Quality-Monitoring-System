@@ -23,7 +23,7 @@ typedef enum
 
 void Alarm_Init(void);
 void Alarm_Update(void);
-
+const char* AlarmLevelToString(AlarmLevel_t level);
 uint8_t Alarm_IsActive(void);
 
 AlarmLevel_t Alarm_GetLevel(void);

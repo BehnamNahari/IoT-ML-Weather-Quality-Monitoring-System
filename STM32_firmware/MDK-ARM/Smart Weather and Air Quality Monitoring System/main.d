@@ -26,4 +26,4 @@ smart\ weather\ and\ air\ quality\ monitoring\ system/main.o: \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h \
   ..\Core\Inc\mock_sensor.h ..\Core\Inc\aqi.h ..\Core\Inc\system_data.h \
   ..\Core\Inc\alarm.h ..\Core\Inc\logger.h ..\Core\Inc\scheduler.h \
-  ..\Core\Inc\filter.h ..\Core\Inc\predictor.h
+  ..\Core\Inc\filter.h ..\Core\Inc\predictor.h ..\Core\Inc\cli.h
