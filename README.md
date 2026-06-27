@@ -279,11 +279,16 @@ The system processes environmental data through multiple software layers:
 - Moving average implementation
 - Spike detection
 
-## Member 3
+## Sama Nouri
 
 - AQI calculation module
 - AQI statistics
 - AQI trend detection
+- ADC-based sensor integration
+- MQ2 sensor simulation in Proteus
+- LED-based air quality indication
+- History module with circular buffer
+- Historical sensor data storage
 
 ## Member 4
 
