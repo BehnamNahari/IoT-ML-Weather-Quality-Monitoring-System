@@ -41,6 +41,7 @@ void Scheduler_Run(void)
 		MockSensor_Update();
 		Filter_Update();
 		AQI_Update();
+		History_PushSample();
 		Predictor_Update();
 		Alarm_Update();
 		last_sensor_time = now;
