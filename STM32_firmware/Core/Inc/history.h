@@ -2,7 +2,14 @@
 #define HISTORY_H
 
 #include <stdint.h>
+#define HISTORY_SIZE 50
 
+typedef struct
+	{
+	float pm25;
+	float co2;
+	uint16_t aqi;
+} HistorySample_t;
 void History_Init(void);
 
 void History_PushSample(void);
