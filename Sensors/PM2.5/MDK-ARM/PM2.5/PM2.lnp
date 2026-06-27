@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"pm2.5\startup_stm32f103xb.o"
+"pm2.5\main.o"
+"pm2.5\stm32f1xx_it.o"
+"pm2.5\stm32f1xx_hal_msp.o"
+"pm2.5\stm32f1xx_hal_gpio_ex.o"
+"pm2.5\stm32f1xx_hal_adc.o"
+"pm2.5\stm32f1xx_hal_adc_ex.o"
+"pm2.5\stm32f1xx_hal.o"
+"pm2.5\stm32f1xx_hal_rcc.o"
+"pm2.5\stm32f1xx_hal_rcc_ex.o"
+"pm2.5\stm32f1xx_hal_gpio.o"
+"pm2.5\stm32f1xx_hal_dma.o"
+"pm2.5\stm32f1xx_hal_cortex.o"
+"pm2.5\stm32f1xx_hal_pwr.o"
+"pm2.5\stm32f1xx_hal_flash.o"
+"pm2.5\stm32f1xx_hal_flash_ex.o"
+"pm2.5\stm32f1xx_hal_exti.o"
+"pm2.5\stm32f1xx_hal_uart.o"
+"pm2.5\system_stm32f1xx.o"
+--strict --scatter "PM2.5\PM2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PM2.map" -o PM2.5\PM2.5
