@@ -270,6 +270,7 @@ The system processes environmental data through multiple software layers:
 - GitHub repository management
 - Code review and integration
 - Final testing and debugging
+- Technical documentation
 
 ## Member 2
 
