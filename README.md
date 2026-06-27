@@ -165,6 +165,23 @@ The embedded firmware performs **inference only**, while model training is compl
 
 ---
 
+# Dataset
+
+The Machine Learning model was trained using the **Beijing PM2.5 Data Set**, a publicly available environmental dataset.
+
+Selected features:
+
+- PM2.5
+- PM2.5(t−1)
+- PM2.5(t−2)
+- PM2.5(t−3)
+- Temperature
+- Pressure
+
+Feature engineering was performed to generate time-lag variables used for future PM2.5 prediction.
+
+---
+
 # Machine Learning Performance
 
 Model:
