@@ -3,7 +3,7 @@
 <title>Static Call Graph - [Smart Weather and Air Quality Monitoring System\Smart Weather and Air Quality Monitoring System.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image Smart Weather and Air Quality Monitoring System\Smart Weather and Air Quality Monitoring System.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Sun Jun 28 00:39:15 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Sun Jun 28 04:55:33 2026
 <BR><P>
 <H3>Maximum Stack Usage =       1048 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -550,7 +550,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_common
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
 </UL>
 
 <P><STRONG><a name="[74]"></a>_printf_pre_padding</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, _printf_pad.o(.text))
@@ -641,21 +641,21 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_common
 </UL>
 
-<P><STRONG><a name="[a4]"></a>memcmp</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, memcmp.o(.text))
+<P><STRONG><a name="[a5]"></a>memcmp</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, memcmp.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = memcmp
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
 </UL>
 
-<P><STRONG><a name="[ab]"></a>strlen</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, strlen.o(.text))
+<P><STRONG><a name="[ac]"></a>strlen</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, strlen.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = strlen
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Logger_Report
 </UL>
 
-<P><STRONG><a name="[a1]"></a>__aeabi_memclr</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_memclr.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Init
+<P><STRONG><a name="[a2]"></a>__aeabi_memclr</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_memclr.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Init
 </UL>
 
 <P><STRONG><a name="[12b]"></a>__rt_memclr</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_memclr.o(.text), UNUSED)
@@ -948,15 +948,15 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
 <LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
 </UL>
 
-<P><STRONG><a name="[a6]"></a>AQI_GetMax</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, aqi.o(.text.AQI_GetMax))
-<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
+<P><STRONG><a name="[a7]"></a>AQI_GetMax</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, aqi.o(.text.AQI_GetMax))
+<BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
 </UL>
 
-<P><STRONG><a name="[a5]"></a>AQI_GetMin</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, aqi.o(.text.AQI_GetMin))
-<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
+<P><STRONG><a name="[a6]"></a>AQI_GetMin</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, aqi.o(.text.AQI_GetMin))
+<BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
 </UL>
 
 <P><STRONG><a name="[e4]"></a>AQI_Init</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, aqi.o(.text.AQI_Init))
@@ -980,13 +980,13 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Logger_Report
 </UL>
 
-<P><STRONG><a name="[aa]"></a>Alarm_GetCounter</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, alarm.o(.text.Alarm_GetCounter))
-<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
+<P><STRONG><a name="[ab]"></a>Alarm_GetCounter</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, alarm.o(.text.Alarm_GetCounter))
+<BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Logger_Report
 </UL>
 
-<P><STRONG><a name="[a9]"></a>Alarm_GetLevel</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, alarm.o(.text.Alarm_GetLevel))
-<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
+<P><STRONG><a name="[aa]"></a>Alarm_GetLevel</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, alarm.o(.text.Alarm_GetLevel))
+<BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Logger_Report
 </UL>
 
@@ -994,19 +994,21 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Logger_Report
 </UL>
 
-<P><STRONG><a name="[e5]"></a>Alarm_Init</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, alarm.o(.text.Alarm_Init))
+<P><STRONG><a name="[e5]"></a>Alarm_Init</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, alarm.o(.text.Alarm_Init))
 <BR><BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[a8]"></a>Alarm_IsActive</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, alarm.o(.text.Alarm_IsActive))
-<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
+<P><STRONG><a name="[a9]"></a>Alarm_IsActive</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, alarm.o(.text.Alarm_IsActive))
+<BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
 </UL>
 
-<P><STRONG><a name="[9e]"></a>Alarm_Update</STRONG> (Thumb, 284 bytes, Stack size 40 bytes, alarm.o(.text.Alarm_Update))
-<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = Alarm_Update &rArr; __aeabi_fcmplt
+<P><STRONG><a name="[9e]"></a>Alarm_Update</STRONG> (Thumb, 448 bytes, Stack size 40 bytes, alarm.o(.text.Alarm_Update))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = Alarm_Update &rArr; __aeabi_fsub
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fcmplt
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fcmpge
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fcmpgt
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fsub
 </UL>
 <BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Scheduler_Run
 </UL>
@@ -1018,35 +1020,35 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f103xb.o(RESET)
 </UL>
-<P><STRONG><a name="[a0]"></a>CLI_Init</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, cli.o(.text.CLI_Init))
+<P><STRONG><a name="[a1]"></a>CLI_Init</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, cli.o(.text.CLI_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
 <LI>Call Chain = CLI_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Receive_IT
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+<BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Receive_IT
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Scheduler_Init
 </UL>
 
-<P><STRONG><a name="[a3]"></a>CLI_Process</STRONG> (Thumb, 484 bytes, Stack size 168 bytes, cli.o(.text.CLI_Process))
+<P><STRONG><a name="[a4]"></a>CLI_Process</STRONG> (Thumb, 484 bytes, Stack size 168 bytes, cli.o(.text.CLI_Process))
 <BR><BR>[Stack]<UL><LI>Max Depth = 304 + Unknown Stack Size
 <LI>Call Chain = CLI_Process &rArr; __2snprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetAvgCO2
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetAvgPM25
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetSampleCount
-<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Fault_GetFlags
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Fault_HasFault
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetAvgCO2
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetAvgPM25
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetSampleCount
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Fault_GetFlags
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Fault_HasFault
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AQI_GetAverage
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AQI_GetMax
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AQI_GetMin
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Alarm_GetCounter
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Alarm_GetLevel
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Alarm_IsActive
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
-<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AQI_GetMax
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AQI_GetMin
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Alarm_GetCounter
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Alarm_GetLevel
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Alarm_IsActive
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2snprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Scheduler_Run
@@ -1055,13 +1057,13 @@ Global Symbols
 <P><STRONG><a name="[7]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f1xx_it.o(.text.DebugMon_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f103xb.o(RESET)
 </UL>
-<P><STRONG><a name="[b1]"></a>Fault_GetFlags</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, fault.o(.text.Fault_GetFlags))
-<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
+<P><STRONG><a name="[b2]"></a>Fault_GetFlags</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, fault.o(.text.Fault_GetFlags))
+<BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Logger_Report
 </UL>
 
-<P><STRONG><a name="[b0]"></a>Fault_HasFault</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, fault.o(.text.Fault_HasFault))
-<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
+<P><STRONG><a name="[b1]"></a>Fault_HasFault</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, fault.o(.text.Fault_HasFault))
+<BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Logger_Report
 </UL>
 
@@ -1069,11 +1071,11 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Scheduler_Init
 </UL>
 
-<P><STRONG><a name="[b2]"></a>Fault_Update</STRONG> (Thumb, 156 bytes, Stack size 40 bytes, fault.o(.text.Fault_Update))
+<P><STRONG><a name="[b3]"></a>Fault_Update</STRONG> (Thumb, 156 bytes, Stack size 40 bytes, fault.o(.text.Fault_Update))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = Fault_Update &rArr; __aeabi_fcmplt
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fcmplt
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fcmple
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fcmple
 <LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fcmpgt
 </UL>
 <BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Scheduler_Run
@@ -1083,16 +1085,16 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[b4]"></a>Filter_Update</STRONG> (Thumb, 422 bytes, Stack size 48 bytes, filter.o(.text.Filter_Update))
+<P><STRONG><a name="[b5]"></a>Filter_Update</STRONG> (Thumb, 422 bytes, Stack size 48 bytes, filter.o(.text.Filter_Update))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = Filter_Update &rArr; __aeabi_fmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
 <LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fcmple
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fcmple
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fcmpge
 <LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fcmpgt
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fsub
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fsub
 <LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fadd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Scheduler_Run
@@ -1181,7 +1183,7 @@ Global Symbols
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Scheduler_Run
 <LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MockSensor_Init
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Logger_Report
 </UL>
 
@@ -1315,16 +1317,16 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
 </UL>
 
-<P><STRONG><a name="[a2]"></a>HAL_UART_Receive_IT</STRONG> (Thumb, 84 bytes, Stack size 0 bytes, stm32f1xx_hal_uart.o(.text.HAL_UART_Receive_IT))
-<BR><BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Init
+<P><STRONG><a name="[a3]"></a>HAL_UART_Receive_IT</STRONG> (Thumb, 84 bytes, Stack size 0 bytes, stm32f1xx_hal_uart.o(.text.HAL_UART_Receive_IT))
+<BR><BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Init
 </UL>
 
-<P><STRONG><a name="[af]"></a>HAL_UART_Transmit</STRONG> (Thumb, 402 bytes, Stack size 32 bytes, stm32f1xx_hal_uart.o(.text.HAL_UART_Transmit))
+<P><STRONG><a name="[b0]"></a>HAL_UART_Transmit</STRONG> (Thumb, 402 bytes, Stack size 32 bytes, stm32f1xx_hal_uart.o(.text.HAL_UART_Transmit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = HAL_UART_Transmit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Logger_Report
 </UL>
 
@@ -1335,25 +1337,25 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f103xb.o(RESET)
 </UL>
-<P><STRONG><a name="[ad]"></a>History_GetAvgCO2</STRONG> (Thumb, 184 bytes, Stack size 40 bytes, history.o(.text.History_GetAvgCO2))
+<P><STRONG><a name="[ae]"></a>History_GetAvgCO2</STRONG> (Thumb, 184 bytes, Stack size 40 bytes, history.o(.text.History_GetAvgCO2))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = History_GetAvgCO2 &rArr; __aeabi_fdiv
 </UL>
 <BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
 <LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
 <LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fadd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Logger_Report
 </UL>
 
-<P><STRONG><a name="[ae]"></a>History_GetAvgPM25</STRONG> (Thumb, 186 bytes, Stack size 40 bytes, history.o(.text.History_GetAvgPM25))
+<P><STRONG><a name="[af]"></a>History_GetAvgPM25</STRONG> (Thumb, 186 bytes, Stack size 40 bytes, history.o(.text.History_GetAvgPM25))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = History_GetAvgPM25 &rArr; __aeabi_fdiv
 </UL>
 <BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
 <LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
 <LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fadd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Logger_Report
 </UL>
 
@@ -1373,8 +1375,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Logger_Report
 </UL>
 
-<P><STRONG><a name="[ac]"></a>History_GetSampleCount</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, history.o(.text.History_GetSampleCount))
-<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
+<P><STRONG><a name="[ad]"></a>History_GetSampleCount</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, history.o(.text.History_GetSampleCount))
+<BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Logger_Report
 </UL>
 
@@ -1396,24 +1398,24 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 952 + Unknown Stack Size
 <LI>Call Chain = Logger_Report &rArr; Logger_Append &rArr; vsnprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetMaxPM25
 <LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetMinPM25
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetAvgCO2
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetAvgPM25
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetSampleCount
-<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Fault_GetFlags
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Fault_HasFault
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetAvgCO2
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetAvgPM25
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetSampleCount
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Fault_GetFlags
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Fault_HasFault
 <LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Predictor_GetForecastAQI
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Logger_Append
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AlarmLevelToString
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Alarm_GetCounter
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Alarm_GetCounter
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Alarm_GetReason
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Alarm_GetLevel
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Alarm_GetLevel
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 </UL>
 <BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Scheduler_Run
 </UL>
@@ -1478,7 +1480,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
 <LI>Call Chain = Scheduler_Init &rArr; CLI_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Init
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Init
 <LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Fault_Init
 <LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Predictor_Init
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_Init
@@ -1490,14 +1492,14 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 968 + Unknown Stack Size
 <LI>Call Chain = Scheduler_Run &rArr; Logger_Report &rArr; Logger_Append &rArr; vsnprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Fault_Update
+<BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Fault_Update
 <LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Predictor_Update
 <LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_PushSample
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MockSensor_Update
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Logger_Report
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Filter_Update
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Filter_Update
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AQI_Update
 <LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Alarm_Update
 </UL>
@@ -1638,10 +1640,10 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_f2d
 </UL>
 
-<P><STRONG><a name="[a7]"></a>__aeabi_f2d</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, f2d.o(x$fpl$f2d))
+<P><STRONG><a name="[a8]"></a>__aeabi_f2d</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, f2d.o(x$fpl$f2d))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_f2d
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLI_Process
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Logger_Report
 </UL>
 
@@ -1655,9 +1657,9 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Predictor_Update
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MockSensor_Update
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetAvgCO2
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetAvgPM25
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Filter_Update
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetAvgCO2
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetAvgPM25
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Filter_Update
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AQI_Update
 </UL>
 
@@ -1680,10 +1682,11 @@ Global Symbols
 <P><STRONG><a name="[99]"></a>__aeabi_fcmpgt</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, fcmp.o(x$fpl$fcmp))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_fcmpgt
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Fault_Update
+<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Fault_Update
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetMaxPM25
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Filter_Update
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Filter_Update
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AQI_Update
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Alarm_Update
 </UL>
 
 <P><STRONG><a name="[f7]"></a>_fgr</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, fcmp.o(x$fpl$fcmp), UNUSED)
@@ -1693,7 +1696,7 @@ Global Symbols
 <P><STRONG><a name="[9f]"></a>__aeabi_fcmpge</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, fcmp.o(x$fpl$fcmp))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_fcmpge
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Filter_Update
+<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Filter_Update
 <LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Alarm_Update
 </UL>
 
@@ -1701,11 +1704,11 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fcmpge
 </UL>
 
-<P><STRONG><a name="[b3]"></a>__aeabi_fcmple</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, fcmp.o(x$fpl$fcmp))
+<P><STRONG><a name="[b4]"></a>__aeabi_fcmple</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, fcmp.o(x$fpl$fcmp))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_fcmple
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Fault_Update
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Filter_Update
+<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Fault_Update
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Filter_Update
 </UL>
 
 <P><STRONG><a name="[fa]"></a>_fleq</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, fcmp.o(x$fpl$fcmp), UNUSED)
@@ -1715,7 +1718,7 @@ Global Symbols
 <P><STRONG><a name="[9d]"></a>__aeabi_fcmplt</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, fcmp.o(x$fpl$fcmp))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_fcmplt
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Fault_Update
+<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Fault_Update
 <LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetMinPM25
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AQI_Update
 <LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Alarm_Update
@@ -1735,9 +1738,9 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_fdiv
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MockSensor_Update
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetAvgCO2
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetAvgPM25
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Filter_Update
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetAvgCO2
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetAvgPM25
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Filter_Update
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AQI_GetAverage
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AQI_Update
 </UL>
@@ -1769,9 +1772,9 @@ Global Symbols
 
 <P><STRONG><a name="[96]"></a>__aeabi_ui2f</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, fflt_clz.o(x$fpl$ffltu))
 <BR><BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MockSensor_Update
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetAvgCO2
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetAvgPM25
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Filter_Update
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetAvgCO2
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;History_GetAvgPM25
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Filter_Update
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AQI_GetAverage
 </UL>
 
@@ -1801,7 +1804,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_fmul
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Predictor_Update
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Filter_Update
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Filter_Update
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AQI_Update
 </UL>
 
@@ -1828,10 +1831,11 @@ Global Symbols
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fadd
 </UL>
 
-<P><STRONG><a name="[b5]"></a>__aeabi_fsub</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, faddsub_clz.o(x$fpl$fsub))
+<P><STRONG><a name="[a0]"></a>__aeabi_fsub</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, faddsub_clz.o(x$fpl$fsub))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_fsub
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Filter_Update
+<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Filter_Update
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Alarm_Update
 </UL>
 
 <P><STRONG><a name="[101]"></a>_fsub</STRONG> (Thumb, 234 bytes, Stack size 16 bytes, faddsub_clz.o(x$fpl$fsub), UNUSED)

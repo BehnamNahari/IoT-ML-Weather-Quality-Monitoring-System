@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"sensoor\startup_stm32f103xb.o"
+"sensoor\dht11.o"
+"sensoor\main.o"
+"sensoor\stm32f1xx_it.o"
+"sensoor\stm32f1xx_hal_msp.o"
+"sensoor\stm32f1xx_hal_gpio_ex.o"
+"sensoor\stm32f1xx_hal_uart.o"
+"sensoor\stm32f1xx_hal.o"
+"sensoor\stm32f1xx_hal_rcc.o"
+"sensoor\stm32f1xx_hal_rcc_ex.o"
+"sensoor\stm32f1xx_hal_gpio.o"
+"sensoor\stm32f1xx_hal_dma.o"
+"sensoor\stm32f1xx_hal_cortex.o"
+"sensoor\stm32f1xx_hal_pwr.o"
+"sensoor\stm32f1xx_hal_flash.o"
+"sensoor\stm32f1xx_hal_flash_ex.o"
+"sensoor\stm32f1xx_hal_exti.o"
+"sensoor\system_stm32f1xx.o"
+--strict --scatter "SENSOOR\SENSOOR.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SENSOOR.map" -o SENSOOR\SENSOOR.axf
