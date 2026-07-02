@@ -297,12 +297,19 @@ PM2.5 Sensor Module:
 - History module with circular buffer
 - Historical sensor data storage
 
-## Member 4
+## Helia Salmasi
 
-- Alarm module
-- Alarm level management
-- Alarm hysteresis
-- Alarm reason detection
+- Implement multie-level alarm system (Normal, Warning, Critical)
+- Add alarm system management
+- Implement hysteresis to prevent alarm oscillation
+- Count the total number of alarm events
+- Store the reason for each alarm trigger
+- Update alarm status based on AQI tresholds
+- Handle critical alarm conditions
+- Reset alarm state  when air quality returns to safe range
+- Keep the existing public API unchanged
+- Test alarm behavior under different AQI scenarios
+- Temperature and humidity sensor design
 
 ## Ali Arshia Maleki
 
