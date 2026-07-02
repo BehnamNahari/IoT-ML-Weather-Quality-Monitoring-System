@@ -325,7 +325,7 @@ The system processes environmental data through multiple software layers:
 - Pressure data generation
 - Module testing and build verification
 
-## Member 6
+## Ali Aliloo
 
 - Sensor subsystem
 - Sensor abstraction layer
