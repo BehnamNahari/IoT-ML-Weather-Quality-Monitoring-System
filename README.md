@@ -261,6 +261,8 @@ The system processes environmental data through multiple software layers:
 ## Behnam Gholam Zadeh Nahary — Team Leader
 
 - Overall software architecture
+- Developing the Machine Learning workflow
+- Deploying the trained model into the embedded firmware 
 - Project planning and coordination
 - Module integration
 - Scheduler design
