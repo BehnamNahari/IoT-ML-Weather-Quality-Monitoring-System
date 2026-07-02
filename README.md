@@ -276,14 +276,11 @@ The system processes environmental data through multiple software layers:
 
 ## Yashar Salmani
 
-Data Filtering Module:
 - Designed a data filtering system using EMA and Moving Average
 - Added adaptive smoothing, spike detection, and outlier rejection
 - Tracked min/max values, filtered output, data status, and rejected samples
-Fault Detection Module:
 - Implemented fault detection for abnormal values, invalid CO₂ readings, and sensor errors
 - Integrated fault flags for real-time monitoring
-PM2.5 Sensor Module:
 - Configured STM32 peripherals (ADC1, USART1, GPIO, and clock) in STM32CubeMX
 - Developed firmware for PM2.5 data acquisition, calculation, and UART transmission
 - Simulated and validated the system in Proteus
