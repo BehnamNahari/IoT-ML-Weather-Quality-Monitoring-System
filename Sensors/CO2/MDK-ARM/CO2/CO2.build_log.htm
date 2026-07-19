@@ -1,0 +1,67 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.43.1.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: ali ali, d, LIC=BL28G-VTTNE-4ATDE-587KZ-BPK1G-14Z7P
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.43.0.0
+Toolchain Path:  C:\Users\alisi\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.24
+Assembler:       Armasm.exe V6.24
+Linker/Locator:  ArmLink.exe V6.24
+Library Manager: ArmAr.exe V6.24
+Hex Converter:   FromElf.exe V6.24
+CPU DLL:         SARMCM3.DLL V5.43.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.1.0
+Dialog DLL:      TCM.DLL V1.56.6.0
+ 
+<h2>Project:</h2>
+C:\Users\alisi\Desktop\proge\IoT-ML-Weather-Quality-Monitoring-System-main\IoT-ML-Weather-Quality-Monitoring-System-main\Sensors\CO2\MDK-ARM\CO2.uvprojx
+Project File Date:  07/03/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.24', folder: 'C:\Users\alisi\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'CO2'
+../Core/Src/main.c(120): warning: format specifies type 'unsigned long' but the argument has type 'uint32_t' (aka 'unsigned int') [-Wformat]
+  119 |                 "ADC=%lu  Voltage=%.2f V  CO2=%.0f ppm\r\n",
+      |                      ~~~
+      |                      %u
+  120 |                 adcValue,
+      |                 ^~~~~~~~
+1 warning generated.
+compiling main.c...
+linking...
+Program Size: Code=12880 RO-data=488 RW-data=12 ZI-data=1828  
+FromELF: creating hex file...
+"CO2\CO2.axf" - 0 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.3.0.pack
+                ARM::CMSIS@6.3.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.2.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_CO2
+  C:/Users/alisi/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include
+  C:/Users/alisi/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.2.0
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
